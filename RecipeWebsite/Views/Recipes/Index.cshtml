@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "簡易麻醬麵";
+}
+
+@model RecipeData.Recipe
+
+
+@*Improve layout with Bootstrap design*@
+
+@*Check design looks good responsively*@
+
+@*Branding? Colours, fonts, Logos*@
+
+<main>
+    <header>
+        <h2>@Model.Name (@Model.MandarinName)</h2>
+    </header>
+
+    <br/>
+
+    <section>
+        <p class="lead">平常最愛在麵攤點碗麻醬麵配上一碗餛飩湯，自從發現在家利用芝麻醬包和醬油膏簡單調味，10分鐘就可以有熱燙燙香噴噴的麻醬麵可以上桌嘍!</p>
+    </section>
+
+    <br/>
+
+    <section class="row">
+        <div class="col-md-8">
+            @*Great photos are keys - content is king*@
+            <img src="~/Images/Noodles.jpg" alt="" class="img-responsive img-rounded"/>
+        </div>
+        <div class="col-md-4">
+            <h3>Cooking Time (料理時間)</h3>
+            10 分鐘
+
+            <h3>Ingredients (食材)</h3>
+            <ul class="list-group">
+                <li class="list-group-item">麵條<span class="pull-right">2人份</span></li>
+                <li class="list-group-item">芝麻醬<span class="pull-right">40g</span></li>
+                <li class="list-group-item">醬油膏<span class="pull-right">1大匙</span></li>
+                <li class="list-group-item">超嫩青江菜<span class="pull-right">適量</span></li>
+                <li class="list-group-item">油蔥<span class="pull-right">少許</span></li>
+            </ul>
+        </div>
+        @*<div class="col-md-1"></div>*@
+</section>
+
+    <hr/>
+
+    <section>
+        <h3>Steps (步驟)</h3>
+
+        <br />
+
+        <div class="row">
+            <div class="col-md-1">
+                1
+            </div>
+            <div class="col-md-3">
+                <img src="~/Images/Step1.jpg" alt="" class="img-responsive img-thumbnail"/>
+            </div>
+            <div class="col-md-8">
+                準備食材
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="row">
+            <div class="col-md-1">
+                2
+            </div>
+            <div class="col-md-3">
+                <img src="~/Images/Step2.jpg" alt="" class="img-responsive img-thumbnail"/>
+            </div>
+            <div class="col-md-8">
+                將麵條和青菜放入鍋內煮，煮麵條時將芝麻醬丶醬油膏及少許油蔥加入煮麵水拌勻
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="row">
+            <div class="col-md-1">
+                3
+            </div>
+            <div class="col-md-3">
+                <img src="~/Images/Step3.jpg" alt="" class="img-responsive img-thumbnail"/>
+            </div>
+            <div class="col-md-8">
+                將麵條拌入調好的芝麻醬汁即可
+            </div>
+        </div>
+    </section>
+</main>
